@@ -1,0 +1,296 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Posts.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Posts.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Posts"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Posts 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_POSTS_DIALOG DIALOGEX 0, 0, 169, 63
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_APPWINDOW
+CAPTION "粘贴复制小工具"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "广告1",IDC_BTN_AD1,18,7,34,16
+    PUSHBUTTON      "广告2",IDC_BTN_AD2,70,7,34,16
+    PUSHBUTTON      "广告3",IDC_BTN_AD3,117,7,34,16
+    PUSHBUTTON      "广告4",IDC_BTN_AD4,18,40,34,16
+    PUSHBUTTON      "广告5",IDC_BTN_AD5,70,40,34,16
+    PUSHBUTTON      "广告6",IDC_BTN_AD6,117,40,34,16
+    PUSHBUTTON      "帖子",IDC_BTN_FILE_OPEN,49,25,23,11
+    PUSHBUTTON      "跟帖",IDC_BTN_FILE_WRITE,100,26,23,11
+    PUSHBUTTON      "目录",IDC_BTN_FOLDER,7,26,23,11
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 202, 100
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_AD1,44,14,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AD4,140,15,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AD2,44,33,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AD5,140,33,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AD3,44,56,51,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AD6,140,56,51,12,ES_AUTOHSCROLL
+    LTEXT           "1",IDC_STATIC,12,13,26,12
+    LTEXT           "4",IDC_STATIC,109,15,26,12
+    LTEXT           "2",IDC_STATIC,12,36,26,12
+    LTEXT           "3",IDC_STATIC,12,54,26,12
+    LTEXT           "5",IDC_STATIC,109,34,26,12
+    LTEXT           "6",IDC_STATIC,109,56,26,12
+    PUSHBUTTON      "确定",IDC_BTN_OK,33,80,36,13
+    PUSHBUTTON      "关闭",IDC_BTN_CLOSE,134,80,36,13
+END
+
+IDD_POPDIALOG DIALOGEX 0, 0, 131, 101
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "保存网址"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_TIP,1,0,127,100,ES_MULTILINE
+END
+
+IDD_DLG_HOTKEY DIALOG DISCARDABLE  0, 0, 174, 114
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "热键设置"
+FONT 10, "宋体"
+BEGIN
+    CONTROL         "Ctrl",IDC_CHECK_CTRL,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,29,36,32,10
+    CONTROL         "Alt",IDC_CHECK_ALT,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,29,51,32,10
+    CONTROL         "Shift",IDC_CHECK_SHIFT,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,29,66,32,10
+    COMBOBOX        IDC_CBO_VKCODE,76,36,44,66,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "确定",IDOK,95,84,29,14
+    GROUPBOX        "设置",IDC_STATIC,16,25,116,76
+    COMBOBOX        IDC_CBO_BTNNAME,44,7,48,80,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "按钮",IDC_STATIC,21,10,16,12
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "jiftle 编写 2010-02-02\0"
+            VALUE "CompanyName", "jiftle 编写\0"
+            VALUE "FileDescription", "Posts 复制小工具\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Posts\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Posts.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Posts 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_POSTS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 162
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_POPDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 130
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_DLG_HOTKEY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\blogrecommend_hz_001.bmp"
+IDB_BKPIC               BITMAP  DISCARDABLE     "res\\bkpic.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Posts(&A)..."
+    IDS_TIP                 "粘贴复制小工具."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Posts.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
